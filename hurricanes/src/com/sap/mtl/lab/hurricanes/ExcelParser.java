@@ -9,8 +9,17 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Row;
 
+/**
+ * Excel Parser
+ */
 public class ExcelParser implements IParser {
 
+	/**
+	 * Parse an excel file specified in the fileName parameter.
+	 * @param fileName (Expecting the full path and filename)
+	 * @return List<Object> Contains a list of objects.  Each object represents a row in the worksheet.
+	 * @throws IOException
+	 */
 	@Override
 	public List<Object> parse(String fileName) throws IOException {
 		ArrayList<Object> locations = new ArrayList<Object>();
