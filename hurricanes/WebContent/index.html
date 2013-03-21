@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Hurricanes v1.0</title>
+<link rel="stylesheet" type="text/css" href="css/hurricanes.css">
 <script
 src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false">
 </script>
@@ -74,7 +76,17 @@ $(document).ready(function() {
 </head>
 
 <body>
+<h3>Hurricanes v1.0</h3>
+<p>Number of hurricanes that have hit a location in The Caribbean since 1944.</p>
+<table>
+	<tr>
+		<td bgcolor="#0000FF" width="10px;"></td><td>Up to 29<td> 
+		<td></td>
+		<td bgcolor="FDD017" width="10px;"></td><td>30 - 59<td>
+		<td></td>
+		<td bgcolor="FFA500" width="10px;"></td><td>60 and more (80)<td>
+	</tr>
+</table>
 <div id="googleMap" style="width:800px;height:600px;"></div>
-
 </body>
 </html>
